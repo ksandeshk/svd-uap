@@ -1,6 +1,6 @@
 # Universalization of Any Adversarial Attack using Very Few Test Examples
 
-This repository is the preliminary codebase for the CODS-COMAD 2022 research track paper [Universalization of any adversarial attack using very few test examples](https://dl.acm.org/doi/abs/10.1145/3493700.3493718). Working code with be updated soon.
+This repository is the preliminary codebase for the CODS-COMAD 2022 research track paper [Universalization of any adversarial attack using very few test examples](https://dl.acm.org/doi/abs/10.1145/3493700.3493718).
 
 ## Overview
 The paper gives a simple SVD based algorithm to obtain an universal attack from well known adversarial directions like Gradients, FGSM and DeepFool directions.
@@ -10,15 +10,15 @@ The paper gives a simple SVD based algorithm to obtain an universal attack from 
 Codebases used in the paper as is or modified accordingly.
 
 * [DeepFool] (https://github.com/LTS4/DeepFool)
-
+* [CIFAR10] (https://github.com/kuangliu/pytorch-cifar)
 
 ## Code documentation.
 
-* Instructions to construct the SVD-Attack
-    * Collect the attack vectors 
-    * Obtain the top SVD vectors using the given script
-    * Apply the SVD-Attack with scale factor and obtain the fooling rate.
-	* Script to generate the SVD vectors 
+* Instructions to construct the SVD-Attack for CIFAR10 dataset
+    * Load a trained model as obtained in [CIFAR10] (https://github.com/kuangliu/pytorch-cifar)
+    * Collect the attack vectors (python/collect-attack-vectors.py - code snippet) 
+    * Obtain the top SVD vectors using the given script (python/svd-uap.py)
+    * Apply the SVD-Attack with scale factor and obtain the fooling rate. (python/fooling-rate.py - code snippet)
 
 ## Citation
 
